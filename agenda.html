@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+	<head>
+		<title>2023台灣地理資訊學會年會暨學術研討會</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+		<!-- Font: Noto Sans TC -->
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:500&display=swap&subset=chinese-traditional" rel="stylesheet">
+
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/bff549feac.js" crossorigin="anonymous"></script>
+
+		<!-- jQuery RWD Image Maps (https://github.com/stowball/jQuery-rwdImageMaps) -->
+		<script src="jQuery-rwdImageMaps/jquery.rwdImageMaps.js"></script>
+
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="style.css">
+
+		<script>
+			$(document).ready(function() { 
+				$('img[usemap]').rwdImageMaps();
+				agendaOnResize();
+			});
+		</script>
+
+		<style>
+			body
+			{
+				display: flex;
+				flex-direction: column;
+			}
+
+			.mybg
+			{
+				height: 30%;
+				flex-shrink: 0;
+			}
+		</style>
+	</head>
+
+	<body class="text-center" onresize="agendaOnResize()">
+		<nav class="navbar navbar-expand-sm navbar-dark mybgcolor-dark fixed-top" id="nav"></nav>
+
+		<section class="d-flex justify-content-center align-items-center mt-5 mybg">
+			<h1 class="display-4 text-shadow">議程</h1>
+		</section>
+
+		<section class="mycontainer-s mb-5" style="flex-grow:1;">
+			<img id="top" class="img-fluid" src="images/agenda/agenda.jpg" usemap="#agenda" alt="agenda">
+			<map name="agenda">
+				<area href="#open" onclick="scrollToTarget(event, 'open', 16)" shape="rect" coords="390,241,546,413">
+				<area href="#forum1" onclick="scrollToTarget(event, 'forum1', 16)" shape="rect" coords="390,515,546,687">
+				<area href="#forum2" onclick="scrollToTarget(event, 'forum2', 16)" shape="rect" coords="390,787,546,959">
+				<area href="#forum3" onclick="scrollToTarget(event, 'forum3', 16)" shape="rect" coords="551,787,707,959">
+				<area href="#forum4" onclick="scrollToTarget(event, 'forum4', 16)" shape="rect" coords="390,1060,546,1232">
+				<area href="#forum5" onclick="scrollToTarget(event, 'forum5', 16)" shape="rect" coords="390,1333,546,1505">
+				<area href="#close" onclick="scrollToTarget(event, 'close', 16)" shape="rect" coords="390,1879,546,2051">
+				<area href="#firm" onclick="scrollToTarget(event, 'firm', 16)" shape="rect" coords="1354,515,1510,687">
+				<area href="#firm" onclick="scrollToTarget(event, 'firm', 16)" shape="rect" coords="1354,787,1510,959">
+				<area href="#normal1" onclick="scrollToTarget(event, 'normal1', 16)" shape="rect" coords="551,515,707,687">
+				<area href="#normal2" onclick="scrollToTarget(event, 'normal2', 16)" shape="rect" coords="711,515,867,687">
+				<area href="#normal3" onclick="scrollToTarget(event, 'normal3', 16)" shape="rect" coords="712,787,868,959">
+				<area href="#normal4" onclick="scrollToTarget(event, 'normal4', 16)" shape="rect" coords="872,787,1028,959">
+				<area href="#normal5" onclick="scrollToTarget(event, 'normal5', 16)" shape="rect" coords="1033,787,1189,959">
+				<area href="#normal6" onclick="scrollToTarget(event, 'normal6', 16)" shape="rect" coords="551,1060,707,1232">
+				<area href="#normal7" onclick="scrollToTarget(event, 'normal7', 16)" shape="rect" coords="711,1060,867,1232">
+				<area href="#normal8" onclick="scrollToTarget(event, 'normal8', 16)" shape="rect" coords="550,1333,706,1505">
+				<area href="#normal9" onclick="scrollToTarget(event, 'normal9', 16)" shape="rect" coords="711,1333,867,1505">
+				<area href="#normal10" onclick="scrollToTarget(event, 'normal10', 16)" shape="rect" coords="550,1606,706,1778">
+				<area href="#normal11" onclick="scrollToTarget(event, 'normal11', 16)" shape="rect" coords="711,1606,867,1778">
+				<area href="#normal12" onclick="scrollToTarget(event, 'normal12', 16)" shape="rect" coords="872,1606,1028,1778">
+				<area href="#student1" onclick="scrollToTarget(event, 'student1', 16)" shape="rect" coords="872,515,1028,687">
+				<area href="#student2" onclick="scrollToTarget(event, 'student2', 16)" shape="rect" coords="1033,515,1189,687">
+				<area href="#student3" onclick="scrollToTarget(event, 'student3', 16)" shape="rect" coords="872,1060,1028,1232">
+				<area href="#student4" onclick="scrollToTarget(event, 'student4', 16)" shape="rect" coords="1033,1060,1189,1232">
+				<area href="#student5" onclick="scrollToTarget(event, 'student5', 16)" shape="rect" coords="872,1333,1028,1505">
+				<area href="#student6" onclick="scrollToTarget(event, 'student6', 16)" shape="rect" coords="1033,1333,1189,1505">
+				<area href="#science1" onclick="scrollToTarget(event, 'science1', 16)" shape="rect" coords="1194,515,1350,687">
+				<area href="#science2" onclick="scrollToTarget(event, 'science2', 16)" shape="rect" coords="1193,787,1349,959">
+				<area href="#science3" onclick="scrollToTarget(event, 'science3', 16)" shape="rect" coords="1194,1060,1350,1232">
+				<area href="#science4" onclick="scrollToTarget(event, 'science4', 16)" shape="rect" coords="1194,1333,1350,1505">
+				<area href="#science5" onclick="scrollToTarget(event, 'science5', 16)" shape="rect" coords="1193,1606,1349,1778">
+			</map>
+
+			<img class="img-fluid mb-5" src="images/agenda/map1.jpg" alt="map1">
+			<img class="img-fluid mb-5" src="images/agenda/map2.jpg" alt="map2">
+
+			<h1 class="mycolor-sec">論文發表注意事項</h1>
+			<hr class="myhr">
+			<div class="text-left mb-5">
+				<ul>
+					<li>複製簡報：請報告者利用發表前的茶敘時間，將簡報檔複製至會議室之電腦。</li>
+					<li>發表流程：主持人點名 → 開場 → 論文發表（含 Q&A）→ 頒發論文發表證明 → 主持人結語</li>
+					<li>發表時間：12 分鐘 + 3 分鐘 Q&A</li>
+					<li>響鈴提醒：第一次鈴響為<b>第 11 分鐘</b>，第二次鈴響時間為<b>第 12 分鐘</b>，主持人得依實際情況調整時間。</li>
+					<li>
+						優秀學生論文獎評選：每場次由主持人及評論人共同評選出一名最佳發表人。
+						<ul style="list-style-type:circle;">
+							<li>評分項分：文章內容 (30%)、論文發表 (50%)、問題回答 (20%)。</li>
+							<li>頒獎時間：於閉幕式頒發「優秀學生論文獎」，請學生組留到最後參與頒獎。</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<h1 class="mycolor-sec">細部議程</h1>
+			<hr class="myhr">
+
+			<div id="open" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-forum mb-0">開幕典禮</h5>
+						<p class="text-muted mb-0">時間：6/29 (四) 10:00-12:00</p>
+						<p class="text-muted">地點：系館 1F 經緯廳</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>10:00</p>
+				<h5 class="mb-0">開幕典禮</h5>
+				<p class="mycolor-sec mb-0">主持人：洪榮宏 理事長</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>10:20</p>
+				<h5 class="mb-0">拍照</h5>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>10:25</p>
+				<h5 class="mb-0">金圖獎頒獎</h5>
+				<p class="mycolor-sec mb-0">主持人：洪榮宏 理事長</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>10:40</p>
+				<h5 class="mb-0">第五屆國土測繪圖資 GIS 競賽頒獎</h5>
+				<p class="mycolor-sec mb-0">主持人：王成機 司長</p>
+				<hr>
+				<div class="d-flex align-items-end">
+					<div>
+						<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>10:55</p>
+						<h5 class="mb-0">專題演講 1 - Bring Humans into GIS/GIScience</h5>
+						<p class="mycolor-sec mb-0">主持人：曾義星 教授</p>
+						<p class="mycolor-sec mb-0">演講者：蕭世綸 博士，校長講座教授，田納西大學</p>
+					</div>
+					<h5 class="mb-0 ml-auto mr-1">
+						<a href="#speech1" data-toggle="collapse"><i class="fa-solid fa-circle-info mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<div class="card collapse mt-3" id="speech1">
+					<div class="d-flex" name="speaker">
+						<div class="d-flex align-items-center justify-content-center mybgcolor-sec-light">
+							<img src="images/agenda/speaker1.jpg" class="card-img rounded-circle mx-3 my-3" alt="speaker1" style="width:200px;">
+						</div>
+						<div class="card-body mybgcolor-light">
+							<h5 class="card-title font-weight-bold">簡介</h5>
+							<p class="card-text text-justify"><b>Dr. Shih-Lung Shaw</b> is <a href="https://chancellor.utk.edu/programs-and-honors/chancellors-professors/" target="_blank">Chancellor’s Professor</a> and Alvin and Sally Beaman Professor of Geography at the University of Tennessee, Knoxville. His research interests cover GIS for transportation, space-time GIS, time geography, transportation planning, and human dynamics. His recent research has focused on space-time analytics of human dynamics in a hybrid physical-virtual world. Dr. Shaw is an elected <a href="https://www.aaas.org/fellows" target="_blank">Fellow of the American Association for Advancement of Science (AAAS)</a> and a recipient of Edward L. Ullman Award for Outstanding Contributions to Transportation Geography and Outstanding Scholar Award in Regional Development and Planning from the American Association of Geographers (AAG). He currently serves as the <a href="https://www.ucgis.org/leadership" target="_blank">President of the University Consortium for Geographic Information Science (UCGIS)</a> and is the lead editor of Springer’s Human Dynamics in Smart Cities book series. He also served as Interim Associate Provost for International Education and Head of the Department of Geography at the University of Tennessee.</p>
+						</div>
+					</div>
+					<div class="card-body">
+						<h5 class="card-title font-weight-bold">摘要</h5>
+						<p class="card-text text-justify">Conventional geographic information systems (GIS) with a focus on locations in physical space have failed to properly consider humans in its design. As many challenges (e.g., climate change, sustainable development, pandemics, social justice, etc.) we are facing today are closely related to human dynamics, GIS and geographic information science (GIScience) need to bring humans into GIS research, education, and system development more explicitly and effectively. An urgent research challenge is to come up with a transformative approach of developing human-centered GIS/GIScience. This presentation first gives several examples to illustrate the limitations of current GIS in dealing with humans and their activities. For example, how to better represent the Garden Night Market in Tainan on a map as such a place is created by human dynamics without an official boundary? Where is Google, Instagram, Facebook, Zoom, or LINE located on a map? What are the requirements of GIS to support autonomous vehicles? How do we represent various human activities and interactions in an increasingly hybrid physical-virtual world? How can we better handle human dynamics in GIS to address climate change, sustainable development, or social justice issues? This presentation will offer a new GIScience framework that can facilitate transformation of conventional GIS into human-centered GIS/GIScience.</p>
+					</div>
+				</div>
+				<hr>
+				<div class="d-flex align-items-end">
+					<div>
+						<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>11:20</p>
+						<h5 class="mb-0">專題演講 2 - 以高溫熱區、都市風廊、綠蔭地圖推動熱島退燒</h5>
+						<p class="mycolor-sec mb-0">主持人：曾義星 教授</p>
+						<p class="mycolor-sec mb-0">演講者：林子平 博士，特聘教授，國立成功大學規劃與設計學院副院長</p>
+					</div>
+					<h5 class="mb-0 ml-auto mr-1">
+						<a href="#speech2" data-toggle="collapse"><i class="fa-solid fa-circle-info mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<div class="card collapse mt-3" id="speech2">
+					<div class="d-flex" name="speaker">
+						<div class="d-flex align-items-center justify-content-center mybgcolor-sec-light">
+							<img src="images/agenda/speaker2.jpg" class="card-img rounded-circle mx-3 my-3" alt="speaker2" style="width:200px;">
+						</div>
+						<div class="card-body mybgcolor-light">
+							<h5 class="card-title font-weight-bold">簡介</h5>
+							<p class="card-text text-justify"><b>林子平</b>為成功大學建築系特聘教授，兼規劃設計學院副院長，主持建築與氣候研究室，為國際上具高知名度及影響力的研究團隊。國際上過去常以寒冷地區的人體熱舒適喜好做為全球的基準而影響戶外環境設計，林教授挑戰這個溫帶主導的思維，建立了全球第一個亞熱帶 / 熱帶區的熱舒適基準，並以氣候地圖、熱風險地圖及建築能源耗用地圖，做為指認都市高溫、低風速、及耗能熱點的重要工具，並已納入我國綠建築與建築能效法令、縣市政府都市退燒政策。曾獲科技部「傑出研究獎」、臺灣建築學會「優秀青年建築獎」、成功大學「大學社會責任教學優良獎」其著作《都市的夏天為什麼愈來愈熱？》、《跳出溫度舒適圈》曾獲最佳少年兒童讀物、入圍台北國際書展大獎。</p>
+						</div>
+					</div>
+					<div class="card-body">
+						<h5 class="card-title font-weight-bold">摘要</h5>
+						<p class="card-text text-justify">市區的氣溫高於郊區的現象，稱為「都市熱島現象」，除了受到先天地型的影響之外，都市內部綠地水域不足，通風散熱不良，遮蔭條件不佳、空調機具排熱，是造成都市高溫化主要原因。為了解決這些問題，成大建築與氣候研究室（BCLab）以生理特效溫度（即體感溫度）地圖來指認出都市高溫、低風速、高熱壓力的熱區，之後結合各類的氣候資料、土地利用資訊、建築與植栽三維模型，產置出都市風廊、綠地遮蔭、建築耗能等主題地圖，協助台北、台中、台南等多個城市實踐增綠多留藍、讓路給風走、遮蔭蓄熱少、節能減排熱等四項策略，並導入相關之都市與建築法令，讓城市舒適，幫地球降溫。</p>
+					</div>
+				</div>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>11:45</p>
+				<h5 class="mb-0">國科會空間資訊科技學門報告</h5>
+				<p class="mycolor-sec mb-0">主持人：韓仁毓 召集人</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>12:00</p>
+				<h5 class="mb-0">台灣地理資訊學會會務報告</h5>
+				<p class="mycolor-sec">主持人：陳美心 秘書長</p>
+			</div>
+
+			<div id="forum1" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-forum mb-0">智慧國土及國家底圖分組成果發表暨工作坊 I</h5>
+						<p class="mycolor-sec mb-0">主持人：林峰田 教授</p>
+						<p class="text-muted mb-0">時間：6/29 (四) 13:40-15:10</p>
+						<p class="text-muted">地點：系館 1F 經緯廳</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>13:20</p>
+				<h5 class="mb-0">報到</h5>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>13:40</p>
+				<h5 class="mb-0">長官貴賓致詞、與會貴賓大合照</h5>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>13:50</p>
+				<h5 class="mb-0">國家底圖分組推動策略及運作發展</h5>
+				<p class="mycolor-sec mb-0">黃英婷 科長，內政部國土測繪中心</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>14:10</p>
+				<h5 class="mb-0">國家災防圖資共享與數位孿生應用</h5>
+				<p class="mycolor-sec mb-0">張子瑩 組長，國家災害防救科技中心</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>14:30</p>
+				<h5 class="mb-0">國土空間資訊架構（NGSF）下之虛實共構環境概述</h5>
+				<p class="mycolor-sec mb-0">林錫慶 研究員，財團法人國家實驗研究院國家高速網路與計算中心</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>14:50</p>
+				<h5 class="mb-0">智慧國土年度特別獎 - BigGIS：資料處理、資訊整合、服務應用等技術創新之亮點</h5>
+				<p class="mycolor-sec">劉正千 董事/特聘教授，鉅網資訊股份有限公司/國立成功大學地球科學系</p>
+			</div>
+
+			<div id="forum2" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-forum mb-0">智慧國土及國家底圖分組成果發表暨工作坊 II</h5>
+						<p class="mycolor-sec mb-0">主持人：周天穎 教授</p>
+						<p class="text-muted mb-0">時間：6/29 (四) 15:40-17:00</p>
+						<p class="text-muted">地點：系館 1F 經緯廳</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>15:40</p>
+				<h5 class="mb-0">智慧國土年度特別獎 - BigGIS：數位孿生應用於坡地防災之實踐與協作</h5>
+				<p class="mycolor-sec mb-0">陳振宇 總工程司，行政院農業委員會水土保持局</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>16:00</p>
+				<h5 class="mb-0">工作坊暨綜合座談，議題：智慧國土及國家底圖使用者需求及推廣策略</h5>
+				<p class="mycolor-sec">中央單位、縣市政府、GIS 產業代表、測量及空間資訊領域專家學者</p>
+			</div>
+
+			<div  id="forum3" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-forum mb-0">三維空間資訊共構資料聯盟技術論壇</h5>
+						<p class="mycolor-sec mb-0">主持人：施奕良 副研究員</p>
+						<p class="text-muted mb-0">時間：6/29 (四) 15:40-17:30</p>
+						<p class="text-muted">地點：副館 1F 55150</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>15:40</p>
+				<h5 class="mb-0">OpenEO API an Introduction to EO Cloud Computing and Applications</h5>
+				<p class="mycolor-sec mb-0">Dr. Alexander Jacob 副主任，EURAC 地球觀測研究所</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>16:00</p>
+				<h5 class="mb-0">資料聯盟及交換平台推動介紹</h5>
+				<p class="mycolor-sec mb-0">郝振宇 資深副處長，逢甲大學地理資訊系統研究中心</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>16:20</p>
+				<h5 class="mb-0">三維空間資訊基礎服務與應用</h5>
+				<p class="mycolor-sec mb-0">李明龍 副研究員，國家高速網路與計算中心</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>16:40</p>
+				<h5 class="mb-0">智慧農業整合工具展示</h5>
+				<p class="mycolor-sec mb-0">陳似任 股長，高雄市政府農業局</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>17:00</p>
+				<h5 class="mb-0">臺中市易淹水地區三維智慧展示系統</h5>
+				<p class="mycolor-sec mb-0">簡甫任 副總經理，準線智慧科技股份有限公司</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>17:20</p>
+				<h5>綜合討論</h5>
+			</div>
+
+			<div id="forum4" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-forum mb-0">第五屆國土測繪圖資 GIS 競賽成果發表</h5>
+						<p class="mycolor-sec mb-0">主持人：徐百輝 教授</p>
+						<p class="text-muted mb-0">時間：6/30 (五) 08:30-10:00</p>
+						<p class="text-muted">地點：系館 1F 經緯廳</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>08:30</p>
+				<h5 class="mb-0">主席致詞</h5>
+				<p class="mycolor-sec mb-0">徐百輝 名譽理事</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>08:30</p>
+				<h5 class="mb-0">第六屆國土測繪圖資 GIS 競賽辦理規劃與說明</h5>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>08:50</p>
+				<h5 class="mb-0">教師及學生增能研習工作坊規劃與說明</h5>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>09:10</p>
+				<h5 class="mb-0">第五屆國土測繪圖資 GIS 競賽 - 大專組優勝隊伍分享</h5>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>09:30</p>
+				<h5 class="mb-0">第五屆國土測繪圖資 GIS 競賽 - 高中組優勝隊伍分享</h5>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>09:50</p>
+				<h5>綜合討論</h5>
+			</div>
+
+			<div id="forum5" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-forum mb-0">智慧國土治理與創新：現況與挑戰</h5>
+						<p class="mycolor-sec mb-0">主持人：林峰田 教授</p>
+						<p class="text-muted mb-0">時間：6/30 (五) 10:30-12:00</p>
+						<p class="text-muted">地點：系館 1F 經緯廳</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>10:30</p>
+				<h5 class="mb-0">主席致詞</h5>
+				<p class="mycolor-sec mb-0">林峰田 教授</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>10:30</p>
+				<h5 class="mb-0">智慧國土發展策略與路徑指引</h5>
+				<p class="mycolor-sec mb-0">賴昆祺 研究員，財團法人台灣地理資訊中心</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>10:50</p>
+				<h5 class="mb-0">跨領域公共建設空間布局分析應用範例</h5>
+				<p class="mycolor-sec mb-0">簡菘震 專案經理，國立成功大學</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>11:10</p>
+				<h5 class="mb-0">智慧國土的數位孿生 GIS 整合技術發展趨勢分析</h5>
+				<p class="mycolor-sec mb-0">林漢良 教授，國立成功大學</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>11:30</p>
+				<h5>綜合討論</h5>
+			</div>
+
+			<div id="close" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-forum mb-0">閉幕典禮</h5>
+						<p class="text-muted mb-0">時間：6/30 (五) 15:30-16:00</p>
+						<p class="text-muted">地點：系館 1F 經緯廳</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>15:30</p>
+				<h5 class="mb-0">閉幕典禮</h5>
+				<p class="mycolor-sec mb-0">主持人：洪榮宏 理事長</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>15:40</p>
+				<h5 class="mb-0">優秀學生論文頒獎</h5>
+				<p class="mycolor-sec mb-0">主持人：洪榮宏 理事長</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>15:50</p>
+				<h5 class="mb-0">優良學門計畫頒獎</h5>
+				<p class="mycolor-sec">主持人：韓仁毓 召集人</p>
+			</div>
+
+			<div id="firm" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-firm mb-0">空間科技與應用成果發表會</h5>
+						<p class="text-muted mb-0">時間：6/29 (四) 13:40-16:40</p>
+						<p class="text-muted">地點：未來館 2F 階梯教室</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>13:40</p>
+				<h5 class="mb-0">以智慧國土需求點燃科技創新</h5>
+				<p class="mycolor-sec mb-0">藏識科技有限公司</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>14:10</p>
+				<h5 class="mb-0">Smart and Green for the Future</h5>
+				<p class="mycolor-sec mb-0">興創知能股份有限公司</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>14:40</p>
+				<h5 class="mb-0">新一代行動式 3D 掃描及測量的解決方案</h5>
+				<p class="mycolor-sec mb-0">群立科技股份有限公司</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>15:40</p>
+				<h5 class="mb-0">高精地圖計畫</h5>
+				<p class="mycolor-sec mb-0">臺灣地理空間資訊產業發展聯盟 TGIIC</p>
+				<hr>
+				<p class="text-muted mb-0"><i class="fa-regular fa-clock mr-1"></i>16:10</p>
+				<h5 class="mb-0">永續城鄉發展和資源管理的技術創新和展望</h5>
+				<p class="mycolor-sec">易圖科技股份有限公司</p>
+			</div>
+
+			<div id="normal1" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-normal mb-0">[一般議程 1] 數位孿生</h5>
+						<p class="mycolor-sec mb-0">主持人：林嘉韋 教授</p>
+						<p class="text-muted mb-0">時間：6/29 (四) 13:40-15:10</p>
+						<p class="text-muted">地點：副館 1F 55150</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. 應用水動力數值模式結合三維視覺展示開發
+					<a href="https://drive.google.com/file/d/1YX45JjslquLkxaEjbBd6hoiqBhNJVcZZ/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">楊鈞宏、張子瑩、陳偉柏、蘇文瑞</p>
+				<hr>
+				<h5 class="mb-0">
+					2. 應用高精地圖與 Carla 軟體建置自駕車之操作設計領域
+					<a href="https://drive.google.com/file/d/1aq1B2ZQBZ5xuQxqksi4GNHA27_eUW60Z/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">郭佩棻、李怡葶</p>
+				<hr>
+				<h5 class="mb-0">
+					3. 三維共構平台之 AR/VR 展示模組
+					<a href="https://drive.google.com/file/d/1erjiUlX4OjXed5Res0tPIialjQtSIn4K/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">蔡坤龍、施奕良、常若愚、李明龍、郭彩軒、吳珮菁、林孟伶</p>
+				<hr>
+				<h5 class="mb-0">
+					4. 軌跡模擬及特殊場域資訊整合三維應用展示平台
+					<a href="https://drive.google.com/file/d/1tEFDXGtbyMXOHe0JzpeS1UA_BhzS2cqH/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">常若愚、施奕良、李明龍、郝振宇、林嘉韋、林孟伶</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 空間資訊基礎環境共構系統雛形
+					<a href="https://drive.google.com/file/d/1vuyJDvTUtXVChJ5yLzp29CxjeKwb8XO3/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">施奕良、謝松廷、謝學維、蔡坤龍、李明龍、常若愚、林孟伶</p>
+			</div>
+
+			<div id="normal2" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-normal mb-0">[一般議程 2] 公衛健康</h5>
+						<p class="mycolor-sec mb-0">主持人：吳秉昇 教授</p>
+						<p class="text-muted mb-0">時間：6/29 (四) 13:40-15:10</p>
+						<p class="text-muted">地點：副館 1F 55160</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. 時空數位軌跡於疫情防治上的應用
+					<a href="https://drive.google.com/file/d/1bejeO3UKaWPIDxsc587mOjwWMAgYe5r_/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">簡宏濂、李玉亭、詹大千</p>
+				<hr>
+				<h5 class="mb-0">
+					2. 以參與式聲景感知繪圖取徑探討環境聲音時空特徵、個人特質與健康的關係
+					<a href="https://drive.google.com/file/d/1YRzAnOIuRcGPLEFNlJ9FHhFZRJ7mW4EZ/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">李玉亭、詹大千、李品嫻、鄧人豪、吳秉昇</p>
+				<hr>
+				<h5 class="mb-0">
+					3. COVID-19 疫情後期雙北地區產業類型變化之研究—以營業稅籍登記資料分析為例
+					<a href="https://drive.google.com/file/d/1EuA5pBiBd1NjB1QwmQWMBr6UBcOubrD7/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">戴君穎、溫婷婷</p>
+				<hr>
+				<h5 class="mb-0">
+					4. 跨單位資料交換與整合之院前救護提前預警應用
+					<a href="https://drive.google.com/file/d/1Pyye7Ay2lO9Qyb2P2Ya8mIteS77ntVNB/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">劉致灝、蕭詩蓉、蔣佳峰、張子瑩</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 結合死因登記檔與地理統計分析探討自殺與熱島效應之長期關聯：以大台南地區過去 19 年資料為例
+					<a href="https://drive.google.com/file/d/1e5qKxOprtu-7TS6FNWjkGeBezo0dOsYw/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">陳潔瑩、張皓庭、陳映融、蔡慧如、姚宗杰、吳治達</p>
+			</div>
+
+			<div id="normal3" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-normal mb-0">[一般議程 3] 智慧國土</h5>
+						<p class="mycolor-sec mb-0">主持人：吳俊毅 博士</p>
+						<p class="text-muted mb-0">時間：6/29 (四) 15:40-17:30</p>
+						<p class="text-muted">地點：副館 1F 55160</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. 國家空間資訊及測繪政策白皮書推動概況
+					<a href="https://drive.google.com/file/d/1KPlSDmMlqWLeS6LG22sTWn_Zo9Y0vK1W/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">王成機、吳俊毅、吳品萱、陳昱芸</p>
+				<hr>
+				<h5 class="mb-0">
+					2. 智慧化地質資料蒐集填報服務之發展與應用
+					<a href="https://drive.google.com/file/d/1hb5T0_fLI5Y-9Fui654nqlRNLZkBlcXO/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">謝亞璇、王炫詠、賴品妙、鄭文昕、張閔翔、莊釗鳴</p>
+				<hr>
+				<h5 class="mb-0">
+					3. AI 智慧下水道設計規劃與韌性城市應用
+					<a href="https://drive.google.com/file/d/1EFtn-mBhAwCVhBaPZlu20NrBJynjuxVK/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">陳韋仲、劉振宇、李金靖、黃旭輝、任念志</p>
+				<hr>
+				<h5 class="mb-0">
+					4. 民生公共物聯網 Band20 骨幹網路開發與應用推廣
+					<a href="https://drive.google.com/file/d/1jgIt1yaX167omq0y42O8dpElKamjc-lR/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">游輝宏、陳威宇、孫振凱</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 國土測繪中心三維建物模型加值應用—WebGIS 彈性化三維建物上色解決方案
+					<a href="https://drive.google.com/file/d/1_l7KEIDKlQ7fBKwkWUvjM1b52yZP-vOX/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">蔡宜芝、黃琳皓、詹品丞、陳毓樺、黃俊宏、楊鈞宏、蘇文瑞</p>
+				<hr>
+				<h5 class="mb-0">
+					6. 以都市形構學視角結合參與式地圖製作建構城市公共空間—臺中舊市區個案探討
+					<a href="https://drive.google.com/file/d/1uxLVx7n18hwc2c4mzGHoxCSQTjrAuA5j/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">黃俐穎、盧沛文</p>
+			</div>
+
+			<div id="normal4" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-normal mb-0">[一般議程 4] 防災應用</h5>
+						<p class="mycolor-sec mb-0">主持人：林士淵 教授</p>
+						<p class="text-muted mb-0">時間：6/29 (四) 15:40-17:30</p>
+						<p class="text-muted">地點：副館 2F 55170</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. 即時監測河道沖刷應用於防災物聯網
+					<a href="https://drive.google.com/file/d/1un7hNgqkIDxSFevI4k85j1XPqNQ_2rw6/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">徐宏瑋</p>
+				<hr>
+				<h5 class="mb-0">
+					2. 災害潛勢與經濟損失之整合應用分析
+					<a href="https://drive.google.com/file/d/1InFPF1QBfKMBcdos4VNHNhmRpLQLdjvQ/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">林美君、蘇明道、鍾明光</p>
+				<hr>
+				<h5 class="mb-0">
+					3. 新版氣候變遷災害風險平台建置
+					<a href="https://drive.google.com/file/d/1qFLbaKZyr4cPatdNOI64K50x0jo3gnGu/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">陳韻如、林宣汝、黃亞婷、劉俊志、黃俊宏</p>
+				<hr>
+				<h5 class="mb-0">
+					4. 災害防救系統導入大數據資料之應用
+					<a href="https://drive.google.com/file/d/1_JHnD4nM5bFokdBmGnClb5qg1DxJTfnv/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">黃俊宏、黃淳茂、蘇文瑞、張子瑩</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 結合崩塌機率模式與 GIS 系統之地震早期評估方法
+					<a href="https://drive.google.com/file/d/1UzeG6uPtfBbCbvgO97CLI8ql60ofpruj/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">謝孟勳、林正紋、廖慧妏、李祐瑄</p>
+				<hr>
+				<h5 class="mb-0">
+					6. 整合遙測與部落感知之坡地災害徵兆觀察
+					<a href="https://drive.google.com/file/d/1eZS3l-_fDOTa2n6Fl3mS8W5vQHfWgN-O/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">林士淵、林玉菁、蘇文瑞、張子瑩、林怡玫、黃信勳、林東暭、李璟芳、藍振維、官大偉</p>
+			</div>
+
+			<div id="normal5" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-normal mb-0">[一般議程 5] 人工智慧</h5>
+						<p class="mycolor-sec mb-0">主持人：龔彬 教授</p>
+						<p class="text-muted mb-0">時間：6/29 (四) 15:40-17:30</p>
+						<p class="text-muted">地點：副館 2F 55180</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. 基於深度學習之航攝影像雲覆判釋
+					<a href="https://drive.google.com/file/d/1Srv4J7Hq9GjLY4zd33GYWcNNuxEMnNc5/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">甘翊萱、林育銓、韓仁毓</p>
+				<hr>
+				<h5 class="mb-0">
+					2. 發展人工智慧混合演算法改良大型車隊路徑規劃問題
+					<a href="https://drive.google.com/file/d/1FGqHpeh6V-g6TUHGzG7U2UFQ51YIaZIT/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">龔彬、陳建甫、穆青雲</p>
+				<hr>
+				<h5 class="mb-0">
+					3. 以 YOLOv7 偵測移動巨石之研究
+					<a href="https://drive.google.com/file/d/16ef2hyKYNAhB4uzftFxPz-PJahWiXbyo/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">陳柏安、魏士超、雷祖強、李旻興</p>
+				<hr>
+				<h5 class="mb-0">
+					4. 透過機械學習演算法來建立臺灣大氣二氧化碳與環境溫度的轉換公式
+					<a href="https://drive.google.com/file/d/1MgBE9LpMeRIH5hiv95nD8ArCVGxHvN8I/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">張皓庭、陳映融、柳婉郁、吳治達</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 以卷積神經網路判釋 UAV 影像中水稻坵塊之研究
+					<a href="https://drive.google.com/file/d/1mSMo-hGz-ggr29No4hTUfdLhnEqBiuxk/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">李秉鴻、沈育璋、雷祖強、魏士超</p>
+				<hr>
+				<h5 class="mb-0">
+					6. 深度學習於都市土地使用分類
+					<a href="https://drive.google.com/file/d/1bzicEWWB7XXXJ84-c1tYUvAh7D1-8pfu/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">林秀蓮、朱宏杰</p>
+			</div>
+
+			<div id="normal6" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-normal mb-0">[一般議程 6] 人文社會</h5>
+						<p class="mycolor-sec mb-0">主持人：鄭安佑 教授</p>
+						<p class="text-muted mb-0">時間：6/30 (五) 08:30-10:00</p>
+						<p class="text-muted">地點：副館 1F 55150</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. 地理資訊系統在文化資產領域普查及追蹤之應用—以臺南市具文化資源潛力標的調查及古都基金會定期觀察為例
+					<a href="https://drive.google.com/file/d/1xb-XwxDoni7PshBfH00a2FO3se8dJfHm/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">鄭安佑、顏世樺</p>
+				<hr>
+				<h5 class="mb-0">
+					2. 社會住宅興辦計畫與儲備用地執行進度管考系統
+					<a href="https://drive.google.com/file/d/1P4CckntjZOGGDJd60YgB-9eu6xOakXAt/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">吳怡萱、邱怡禎、賴桂樟、羅文珊、徐旻穗、歐正興</p>
+				<hr>
+				<h5 class="mb-0">
+					3. 清法戰爭戰場遺址初探—以等高線地形圖與現場調查並結合史料圖資疊套對於基隆地區壕溝陣地的考察
+					<a href="https://drive.google.com/file/d/1FdaSd-EIliEcqqz-6KaGBSt_EeG9Dtx6/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">袁明道、許美策、張蔭昌</p>
+				<hr>
+				<h5 class="mb-0">
+					4. 臺北市外送員機車事故熱區與最短、最安全與混和路徑建議比較
+					<a href="https://drive.google.com/file/d/1eQNl4ouv7CPDVXQwVjqB5QrkOvAYwHvz/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">林佑融、郭佩棻</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 生態系服務美學之空間分布初探—以廣興濕地為例
+					<a href="https://drive.google.com/file/d/16hu90Lwv5KiIVeW2v_OCnvIRQ2N4XaXe/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">吳思儒、王毓婷、王辰云</p>
+			</div>
+
+			<div id="normal7" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-normal mb-0">[一般議程 7] 行動測繪</h5>
+						<p class="mycolor-sec mb-0">主持人：吳順德 教授</p>
+						<p class="text-muted mb-0">時間：6/30 (五) 08:30-10:00</p>
+						<p class="text-muted">地點：副館 1F 55160</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. 自研 INS/GNSS 慣性系統及擴增感測器演算法開發
+					<a href="https://drive.google.com/file/d/1iqlUxsRxjGvX-aE_GA66oZ7dmP8IJLdk/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">林冠穎、蔡栒、黃諺恩、邱宇婷、江凱偉、黃勇介、林維曜</p>
+				<hr>
+				<h5 class="mb-0">
+					2. 高環境適應力 In-lane 級導航演算法 MCRING
+					<a href="https://drive.google.com/file/d/1461wMRnGfJcVFw7_WKpyPd_A19kw0ksm/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">江凱偉、蔡栒、黃吉歆、林晉暘、吳庭鈞、邱宇婷</p>
+				<hr>
+				<h5 class="mb-0">
+					3. 結合無人船多音束水深測量、透地雷達和地電阻率層析成像於農業灌溉埤塘的監測和風險評估
+					<a href="https://drive.google.com/file/d/13Z3eeTVHAdNHktxfdhPz_OnkizDf54_H/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">施亘昶、李啟民、何明光</p>
+				<hr>
+				<h5 class="mb-0">
+					4. 衛星定位測量之不確定度估算方式—北水試驗探討與分析
+					<a href="https://drive.google.com/file/d/1WYbcg6asyHadZTNMje7QMMc906V8vL-f/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">黃欽稜、邱子雯、詹士旻、吳順德</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 穿戴及行動裝置之 GNSS/PDR 整合與定位應用
+					<a href="https://drive.google.com/file/d/1DnCR6TRQcdD8ogyggkV2s5SXxybJL_5Y/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">楊子成、呂揚恩、林晉暘、江凱偉</p>
+			</div>
+
+			<div id="normal8" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-normal mb-0">[一般議程 8] 物聯感測</h5>
+						<p class="mycolor-sec mb-0">主持人：饒見有 教授</p>
+						<p class="text-muted mb-0">時間：6/30 (五) 10:30-12:00</p>
+						<p class="text-muted">地點：副館 1F 55150</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. Calibration of a Multi-Fisheye Camera-Rig for Long Corridor 3D Model Reconstruction
+					<a href="https://drive.google.com/file/d/178TZ_MLU0NFuk0T7NwzVWB4V2UrIIeI_/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">山莫福、饒見有</p>
+				<hr>
+				<h5 class="mb-0">
+					2. Spatial Land Subsidence Prediction Based on Hydrological Data
+					<a href="https://drive.google.com/file/d/1RzLE2qNG6lwyeIYDlkhiDkgUnpGCnE8p/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">Tatas, Hone-Jay Chu and Sumriti Ranjan Patra</p>
+				<hr>
+				<h5 class="mb-0">
+					3. 以影像辨識技術與無線射頻技術實現於林業管理
+					<a href="https://drive.google.com/file/d/1GDAWosLxFPBMs-F2WFsMXoA7K06GW8Hx/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">謝紀亨、羅文珊、林嘉韋、簡嘉良、賴廷亘、林靖晏、陳美惠、王芳</p>
+				<hr>
+				<h5 class="mb-0">
+					4. 整合多時相 SPOT 衛星影像與相關地理資訊於判釋台灣地物覆蓋
+					<a href="https://drive.google.com/file/d/1kUDrUfO_FNB536tCQXdFWBpbEiS6uJhO/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">林孟萱、陳奕穎、王驥魁</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 施工勞安運用於物聯網工區安全監控管理
+					<a href="https://drive.google.com/file/d/13-wBEpR_CKgp0uZep7H4kMppq3G4Jj-D/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">簡嘉良、張幃杰、王銘源、陳美心、詹孟恩</p>
+			</div>
+
+			<div id="normal9" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-normal mb-0">[一般議程 9] 環境探勘</h5>
+						<p class="mycolor-sec mb-0">主持人：張子瑩 組長</p>
+						<p class="text-muted mb-0">時間：6/30 (五) 10:30-12:00</p>
+						<p class="text-muted">地點：副館 1F 55160</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. 地下空間資訊於土地開發與能源探勘上之應用：以工程地質探勘資料庫系統為例
+					<a href="https://drive.google.com/file/d/1VT8e4fy599MkmhlQVmWN6OyrLH0QiLdh/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">鄭文昕、張閔翔、蘇祐鼎、謝亞璇、賴品妙、王炫詠</p>
+				<hr>
+				<h5 class="mb-0">
+					2. 開發行動載具適地性服務以推動在地化環境認知
+					<a href="https://drive.google.com/file/d/1klPTCS52--Dd52uLzquNS0N9aDIW15zn/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">張子瑩、蔣佳峰、蕭詩蓉、黃淳茂、劉致灝</p>
+				<hr>
+				<h5 class="mb-0">
+					3. 地理資訊系統應用於網格化鐵路橋梁震後衝擊評估
+					<a href="https://drive.google.com/file/d/1P3PuVnGW5xJcslPcriDH3Kc6oHPKRM9h/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">劉淑燕</p>
+				<hr>
+				<h5 class="mb-0">
+					4. 應用行動通訊人流分析技術之 918 池上地震境況模擬研究
+					<a href="https://drive.google.com/file/d/1xzKx7x9pQRopAINIA0cUKDJhgbWrAjww/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">吳佳容、黃明偉</p>
+			</div>
+
+			<div id="normal10" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-normal mb-0">[一般議程 10] 永續發展</h5>
+						<p class="mycolor-sec mb-0">主持人：朱宏杰 教授</p>
+						<p class="text-muted mb-0">時間：6/30 (五) 13:30-15:00</p>
+						<p class="text-muted">地點：副館 1F 55150</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. 澎湖縣受保護樹木調查與地理資訊系統資料庫建置
+					<a href="https://drive.google.com/file/d/1Q909oN65vG4hAkhinVvAF6KH4M2KwKKR/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">魏浚紘、彭炳勳、陳建璋、王顥翔、郭家和</p>
+				<hr>
+				<h5 class="mb-0">
+					2. 城市街景綠視指標與衛星植被指數之相關性研究：以高雄為例
+					<a href="https://drive.google.com/file/d/1w7jjfh-Ax7JEN5am5XJUYKNj3NDYDP1k/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">彭逸帆、李品嫻、李玉亭、簡宏濂、詹大千</p>
+				<hr>
+				<h5 class="mb-0">
+					3. 2050 年淨零排放下建築與營建業之策略探討
+					<a href="https://drive.google.com/file/d/1zPY_zsdmJ6G1HqZD_v_3anDoVDn6Xpu5/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">段祥智、張梅英</p>
+				<hr>
+				<h5 class="mb-0">
+					4. 以地理資訊系統應用於魚類棲地適宜性評估—以雙溪流域為例
+					<a href="https://drive.google.com/file/d/1vrPRUwmUNTuNeOPU7ljql8gVnAhYT083/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">陳煥元、李光敦、陳乃光、楊靜宗、楊卓敏</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 海洋保育資料倉儲管理與地理資訊圖台應用
+					<a href="https://drive.google.com/file/d/1cpxywCmo54m-9G4wce-a42YzNr9H17k_/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">陳奕璇、羅文珊、邱怡禎、蕭欣永、陳美心、楊蕙禎、呂建德</p>
+			</div>
+
+			<div id="normal11" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-normal mb-0">[一般議程 11] GIS 應用</h5>
+						<p class="mycolor-sec mb-0">主持人：陳美心 教授</p>
+						<p class="text-muted mb-0">時間：6/30 (五) 13:30-15:00</p>
+						<p class="text-muted">地點：副館 1F 55160</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. 具 UHD 解析度之電力調度圖台開發與應用
+					<a href="https://drive.google.com/file/d/1ZTr9tFRIB67ndUCF5zv0ne52i4fbYH32/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">林子淳、池欣慶、詹振旻、侯孟辰</p>
+				<hr>
+				<h5 class="mb-0">
+					2. 以地理資訊系統活化建築物耐震設計規範使用性
+					<a href="https://drive.google.com/file/d/17y72Blcj5bFShABwUsMIHz7sl6ncgHgX/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">劉勛仁、呂學敏、張毓文</p>
+				<hr>
+				<h5 class="mb-0">
+					3. 城市樹木巡檢管理 GIS 系統
+					<a href="https://drive.google.com/file/d/1fof-C4XQkvAh7RRMIXpjUA-kOcwh7ILF/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">黃舒郁、蕭釧瑛、林永青、謝昇航、謝銘智</p>
+				<hr>
+				<h5 class="mb-0">
+					4. GIS 應用於農作物重金屬污染監測管理
+					<a href="https://drive.google.com/file/d/14EYyxoq9L7UQ6hbxowE2tCI9MkqGGKQQ/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">張蕙容</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 臺中市中央公園空氣品質數據分析
+					<a href="https://drive.google.com/file/d/1C7ulxN-VaEAx28EhhGRglvqEQC5hWHov/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">陳大田、陳美心、林衍岑、王榆雄、鄭家麟、賴廷亘</p>
+				<hr>
+				<h5 class="mb-0">
+					6. 臺中市友善樹木智慧植栽管理
+					<a href="https://drive.google.com/file/d/1UXPjVUVBkQh8iBg0CNzREHGezx7UKb6H/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">陳大田、陳美心、林衍岑、蔡榮峯、王榆雄、簡嘉良</p>
+			</div>
+
+			<div id="normal12" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-normal mb-0">[一般議程 12] 開放資料</h5>
+						<p class="mycolor-sec mb-0">主持人：簡伃貞 教授</p>
+						<p class="text-muted mb-0">時間：6/30 (五) 13:30-15:00</p>
+						<p class="text-muted">地點：副館 2F 55170</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. 含配電系統饋線端末單元異常檢測功能之地理圖資系統
+					<a href="https://drive.google.com/file/d/1wED4nrSTEzFMQ1AeJt3OJY38-nVXe3oH/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">王慎思、劉力源</p>
+				<hr>
+				<h5 class="mb-0">
+					2. 以圖形理論解釋開放資料流動模式與同構之研究
+					<a href="https://drive.google.com/file/d/1t-sBCI2_t500EUgtd87jzVQ69doJer6x/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">黃妙冠、趙僩</p>
+				<hr>
+				<h5 class="mb-0">
+					3. 地理資料研究歷程與資料品質之知識本體設計與實踐
+					<a href="https://drive.google.com/file/d/1WDFsDEcy4pMPY98RfDgECuyXE7ZsIH1n/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">賴政宏、郭巧玲</p>
+				<hr>
+				<h5 class="mb-0">
+					4. 應用機器學習方法分析小樣本與不平衡分類資料：以自駕車事故傷亡程度與影響因子為例
+					<a href="https://drive.google.com/file/d/1jtPmO31iLQsyGdP47j42inHWxueEGNSa/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">許瑋庭、郭佩棻</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 應用 Boruta 特徵選擇法及空間迴歸模型定義各高齡分組行人車禍之相關環境因子
+					<a href="https://drive.google.com/file/d/16ov1TFYJQVs8oq7Tj9uT9neI_bZE4Iq9/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">林宏叡、郭佩棻、邱靜如</p>
+				<hr>
+				<h5 class="mb-0">
+					6. 以十五分鐘生活圈觀點探討高齡友善公園可及性之研究—以臺中市大里區為例
+					<a href="https://drive.google.com/file/d/1ZhTUcxL9Ec19BPmmkZXeoQo4Hwtxt2il/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">鍾嘉芸、簡伃貞、鍾明孝</p>
+			</div>
+
+			<div id="student1" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-student mb-0">[學生議程 1] 建物標準</h5>
+						<p class="mycolor-sec mb-0">主持人：周學政 教授</p>
+						<p class="mycolor-sec mb-0">評論人：溫在弘 教授</p>
+						<p class="text-muted mb-0">時間：6/29 (四) 13:40-15:10</p>
+						<p class="text-muted">地點：副館 2F 55170</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. 數位孿生觀點下的多尺度三維建物設計
+					<a href="https://drive.google.com/file/d/1D5gGCYk2v2HK3jf-Ye6AzVkbe_AwRMI9/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">楊善茹、洪榮宏</p>
+				<hr>
+				<h5 class="mb-0">
+					2. 由階層式詮釋資料探討地理空間影片之管理與標記策略
+					<a href="https://drive.google.com/file/d/16wUzDJ30f9n-qKt6y0ITT6kl-UQgJ7sY/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">林佳欣、洪榮宏</p>
+				<hr>
+				<h5 class="mb-0">
+					3. 由三維空間位置賦能觀點探討建物跨域資料之整合
+					<a href="https://drive.google.com/file/d/1rNAJgF9bO8W8QlyPiu5aJLw2JmLdt7Wc/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">陳琪雯、洪榮宏</p>
+				<hr>
+				<h5 class="mb-0">
+					4. 基礎於建物法規觀點之 BIM/GIS 三維建物室內資料轉換策略研析
+					<a href="https://drive.google.com/file/d/1erEoUsnU09KZTBpmh8xTPRuJ3yZd3m-J/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">邱姿綺、洪榮宏</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 基於 SLAM 整合虛擬實境與物聯網之遙現機器人開發
+					<a href="https://drive.google.com/file/d/1bOghur5sTnGjbvmR8PVxVtEHuDlol-Q9/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">彭丞麒、黃智遠</p>
+			</div>
+
+			<div id="student2" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-student mb-0">[學生議程 2] 衛星監測</h5>
+						<p class="mycolor-sec mb-0">主持人：林柏丞 教授</p>
+						<p class="mycolor-sec mb-0">評論人：曾義星 教授</p>
+						<p class="text-muted mb-0">時間：6/29 (四) 13:40-15:10</p>
+						<p class="text-muted">地點：副館 2F 55180</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. Semi-Supervised Generative Adversarial Network for Identifying Multi-Spectral Crop Images
+					<a href="https://drive.google.com/file/d/19XnFZK2gkKhGx-FKfNxWJCgzWD_qHzJM/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">Jia-Jun Chang, Chun-Hsiang Yin, Tzu-Cheng Chang, Chi-Heng Lu and Kuo-Chen Chang</p>
+				<hr>
+				<h5 class="mb-0">
+					2. 使用可解釋人工智慧方法了解多光譜土地覆蓋分類人工神經網路模型
+					<a href="https://drive.google.com/file/d/1fgzHAX_nHR_B7PCKfP1ShLfH4DS9ZvAZ/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">林溦蓁、黃智遠</p>
+				<hr>
+				<h5 class="mb-0">
+					3. 基於注意力神經網絡進行衛星影像匹配的比較研究
+					<a href="https://drive.google.com/file/d/1IUo_fXN_IQJ1huhAPKzf2BDiBdsygRFX/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">何尹文、林昭宏、吳菉、林柏毅</p>
+				<hr>
+				<h5 class="mb-0">
+					4. Multitemporal Cross-Sensor Satellite Image Normalization for Datacube
+					<a href="https://drive.google.com/file/d/1_ORszhlOEzP-A2eF55Hk2c_bTJuR6Rl9/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">Gabriel Yedaya Immanuel Ryadi and Chao-Hung Lin</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 深度學習用於橋樑劣化檢測之研究—DRU 數值推估
+					<a href="https://drive.google.com/file/d/1aMg3crF2-EKuA_77hwGTYjDmd4nCCmgt/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">蘇聖中、林昭宏、饒見有</p>
+			</div>
+
+			<div id="student3" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-student mb-0">[學生議程 3] 智慧交通</h5>
+						<p class="mycolor-sec mb-0">主持人：黃智遠 教授</p>
+						<p class="mycolor-sec mb-0">評論人：廖泫銘 教授</p>
+						<p class="text-muted mb-0">時間：6/30 (五) 08:30-10:00</p>
+						<p class="text-muted">地點：副館 2F 55170</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. 運用空間分析探討環境特性與駕駛人行為對交通意外事故的成因
+					<a href="https://drive.google.com/file/d/1NUQ5C5OhKV1hqkQOf502fj5uCjes71I2/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">林有祥、詹大千</p>
+				<hr>
+				<h5 class="mb-0">
+					2. 使用遺傳算法解決智慧城市的停車分配問題
+					<a href="https://drive.google.com/file/d/1ERr8Gg857CJkuoHtIGenpiSus023wm0m/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">吳貫平、呂學展</p>
+				<hr>
+				<h5 class="mb-0">
+					3. 基於 CycleGAN 與一致性損失函數提高弱光條件下的車道偵測精度
+					<a href="https://drive.google.com/file/d/1fj19ZWZSysfKbgN41hiCg9ojI20_cb3L/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">邱韋智、呂學展</p>
+				<hr>
+				<h5 class="mb-0">
+					4. 基於 LSTM 自動編碼器提取旅遊特徵並應用於旅遊推薦
+					<a href="https://drive.google.com/file/d/1GmHAceYQoA1fD7G3SXnk3FPwfo0yJ3Jj/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">賴元淯、呂學展</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 以智慧卡資料評估軌道運輸系統中轉乘站的人際接觸特性
+					<a href="https://drive.google.com/file/d/1HxaL03nEZIi098QeIhezvjZhYJSlBNbf/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">夏天恩</p>
+			</div>
+
+			<div id="student4" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-student mb-0">[學生議程 4] 健康環境</h5>
+						<p class="mycolor-sec mb-0">主持人：林昭宏 教授</p>
+						<p class="mycolor-sec mb-0">評論人：楊名 教授</p>
+						<p class="text-muted mb-0">時間：6/30 (五) 08:30-10:00</p>
+						<p class="text-muted">地點：副館 2F 55180</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. 利用 RBF-DNN 配合醫院病患人流資料探究流行病之院內感染熱區
+					<a href="https://drive.google.com/file/d/1dL0C180AkflaYYQP7XQEoKnHfJehLYpd/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">邱顯閎、施長宏、陳奕中、林昭維、蘇純繒</p>
+				<hr>
+				<h5 class="mb-0">
+					2. Assessing the Mediating Effect of Human Mobility Change on the Development of SARS-CoV-2 Pandemic in Taiwan
+					<a href="https://drive.google.com/file/d/1oTL11T0uCRjs2A3FgHJ-f2GLzzIeiWTa/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">張旻蒨、溫在弘</p>
+				<hr>
+				<h5 class="mb-0">
+					3. 以深度學習探索蘇鐵蕨物種分布模式之空間外推潛能
+					<a href="https://drive.google.com/file/d/1iuhmWxBwB7sZ7w6xTmKSfm37yGmsh99n/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">郭慶津、邵寶嬅、羅南璋、黃凱易</p>
+				<hr>
+				<h5 class="mb-0">
+					4. 運用 3S 技術融合多物候日無人機影像空間外推入侵外來種之空間分布：以小花蔓澤蘭為例
+					<a href="https://drive.google.com/file/d/1BZ9_679FVnlLcyaBXJbI_4OwperId_nZ/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">洪浩源、郭慶津、邵寶嬅、羅南璋、黃凱易</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 使用地理人工智慧發展集成學習模型模擬過去 26 年通勤時間空氣污染濃度時空分布—以臭氧為例
+					<a href="https://drive.google.com/file/d/1Hl4_TvjlKW9aD9dsymVgw9Pgw0LeXrcU/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">李芮秦、翁佩詒、吳治達</p>
+			</div>
+
+			<div id="student5" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-student mb-0">[學生議程 5] 人流分析</h5>
+						<p class="mycolor-sec mb-0">主持人：張智安 教授</p>
+						<p class="mycolor-sec mb-0">評論人：徐百輝 教授</p>
+						<p class="text-muted mb-0">時間：6/30 (五) 10:30-12:00</p>
+						<p class="text-muted">地點：副館 2F 55170</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. 透過譜聚類與隨機森林演算法開發人流預警平台
+					<a href="https://drive.google.com/file/d/1jpeYOmfQz5K2NDRToc4ksASrQQlAcITF/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">楊添翼、陳維婷、陳奕中、張子瑩</p>
+				<hr>
+				<h5 class="mb-0">
+					2. 利用行動人流資料優化 Youbike 車輛調度系統
+					<a href="https://drive.google.com/file/d/1ScN0rbZDOM8gdmWhxhZMXgdiLtecnonB/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">楊捷、劉家慈、侯譯棋、蔡宜璇、楊添翼、陳維婷、陳奕中、張子瑩</p>
+				<hr>
+				<h5 class="mb-0">
+					3. 商品配置管理最佳化—以便利商店為例
+					<a href="https://drive.google.com/file/d/1ReydCt0J4PaIHLU_1WL05yMGKbVxzuWo/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">葉昕瑜、曾榮得、林郁森、段邵源、楊添翼、陳維婷、陳奕中</p>
+				<hr>
+				<h5 class="mb-0">
+					4. 利用補償式 GAN 進行晴雨天之人流分布預測—以台北市為例
+					<a href="https://drive.google.com/file/d/1b3s-x7AOKqdSixvQeJESCSAwCvgnCWRi/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">陳羿文、葉重佑、陳維婷、陳奕中、張子瑩、周恆毅</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 利用人流資料指派避難場所之推薦系統—以臺北市為例
+					<a href="https://drive.google.com/file/d/1k66CuscrXUambwlsnma36GwrPyvFzn8I/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">莊鎔璞、曾淑萍、黃羿琳、吳承芸、楊添翼、陳維婷、陳奕中、張子瑩</p>
+			</div>
+
+			<div id="student6" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-student mb-0">[學生議程 6] 創新應用</h5>
+						<p class="mycolor-sec mb-0">主持人：史天元 教授</p>
+						<p class="mycolor-sec mb-0">評論人：劉新達 經理</p>
+						<p class="text-muted mb-0">時間：6/30 (五) 10:30-12:00</p>
+						<p class="text-muted">地點：副館 2F 55180</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					1. 四維地理資訊之時空與品質感知操作研究
+					<a href="https://drive.google.com/file/d/1q5Lq956BAq2dSuwKHgoorv5UpKIQ8VrT/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">何昕宜、洪榮宏</p>
+				<hr>
+				<h5 class="mb-0">
+					2. 足球比賽的空間分析：應用個體模式探索足球隊的進攻模式
+					<a href="https://drive.google.com/file/d/1EkS9VrTsrVWIWM0ohmEnW93FyIrQNcHL/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">倪煒傑</p>
+				<hr>
+				<h5 class="mb-0">
+					3. 廣告招牌街道空間聚集度與商業特性—深度學習、街景影像與社會經濟資料之應用
+					<a href="https://drive.google.com/file/d/1GXnpw5UEDHQHu_oBOqFH2AbkcpixJ8Sk/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">羅章秀、林柏丞</p>
+				<hr>
+				<h5 class="mb-0">
+					4. 符合語意與空間尺度之逆向地理編碼：以細胞廣播為例
+					<a href="https://drive.google.com/file/d/1qQwjE-_tlSr_13mZpUe0yJrgr1DBWa61/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">顏廷龍、郭巧玲</p>
+				<hr>
+				<h5 class="mb-0">
+					5. 綠建築容積獎勵制度之探討
+					<a href="https://drive.google.com/file/d/1drJBIHs1OuEFnU4mLy7xelCZWg7Dx3CJ/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">余秉宸、張梅英</p>
+			</div>
+
+			<div class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-muted">僅收錄</h5>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">
+					應用視覺點雲與點雲地圖匹配技術於 GNSS 訊號遮蔽處之定位研究
+					<a href="https://drive.google.com/file/d/1-MjfCVUbvrVpzRy0o9hvOZ1ypSoSw2ne/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">盧霈汝、江凱偉</p>
+				<hr>
+				<h5 class="mb-0">
+					基於 IMU 陣列之組成技術設計發展行人導航研究
+					<a href="https://drive.google.com/file/d/118DLaFMx3QbcaIErZ5H3USPPCPu9YFpD/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">任依涵、江凱偉</p>
+				<hr>
+				<h5 class="mb-0">
+					智慧農業整合工具展示三維 GIS 圖台應用
+					<a href="https://drive.google.com/file/d/1Ps2h9_N7JBc2iP6CIVcGfGXbjH_dgKWL/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">李明龍、施奕良、常若愚、陳似任、林孟伶</p>
+				<hr>
+				<h5 class="mb-0">
+					圖資雲端整合服務應用與展示系統
+					<a href="https://drive.google.com/file/d/14-CJ0WtOkeXc-2w-gfmkC8u2pR1nc_6D/view?usp=drive_link" target="_blank"><i class="fa-regular fa-file-pdf mycolor-pri ml-1"></i></a>
+				</h5>
+				<p class="mycolor-sec">李明龍、施奕良、常若愚、郭彩軒、吳珮菁、林孟伶</p>
+			</div>
+
+			<div id="science1" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-science mb-0">[國科會計畫 1] 成果發表</h5>
+						<p class="mycolor-sec mb-0">主持人：黃怡碩 教授</p>
+						<p class="text-muted mb-0">時間：6/29 (四) 13:40-15:10</p>
+						<p class="text-muted">地點：系館 2F 55250</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">1. 集水區土壤沖蝕分析和泥沙運移模擬 (Ⅲ)</h5>
+				<p class="mycolor-sec">陳偉堯</p>
+				<hr>
+				<h5 class="mb-0">2. 子計畫：整合衛星觀測資訊進行洪泛區域估算—以濁水溪流域為例</h5>
+				<p class="mycolor-sec">黃怡碩</p>
+				<hr>
+				<h5 class="mb-0">3. 應用地理統計結合 DRASTIC 含水層脆弱度評估及土地利用輔助資訊推估地下水硝酸鹽氮空間分佈</h5>
+				<p class="mycolor-sec">張誠信</p>
+				<hr>
+				<h5 class="mb-0">4. 總計畫：深度學習在防災上的應用</h5>
+				<p class="mycolor-sec">黃怡碩</p>
+				<hr>
+				<h5 class="mb-0">5. 子計畫：結合深度學習與 InSAR 研究坡地災害與降雨之關係模式</h5>
+				<p class="mycolor-sec">蔡佩勳</p>
+			</div>
+
+			<div id="science2" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-science mb-0">[國科會計畫 2] 成果發表</h5>
+						<p class="mycolor-sec mb-0">主持人：雷祖強 教授</p>
+						<p class="text-muted mb-0">時間：6/29 (四) 15:40-17:10</p>
+						<p class="text-muted">地點：系館 2F 55250</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">1. 運用地理人工智慧與街景探討社區環境特性與健康的關係</h5>
+				<p class="mycolor-sec">詹大千</p>
+				<hr>
+				<h5 class="mb-0">2. 外送平台機車肇事嚴重程度與環境因子—以台北市為例 (1/2)</h5>
+				<p class="mycolor-sec">郭佩棻</p>
+				<hr>
+				<h5 class="mb-0">3. Smart City 智慧城市之實踐：以 Web PPGIS 建立城市友善步行地圖</h5>
+				<p class="mycolor-sec">雷祖強</p>
+				<hr>
+				<h5 class="mb-0">4. 慢性疾病時空電子地圖的建構與改良及臺灣人體生物資料庫的加值應用（第五年至第七年）(3/3)</h5>
+				<p class="mycolor-sec">廖勇柏</p>
+				<hr>
+				<h5 class="mb-0">5. 應用地理資訊系統整合微型空氣品質感測器、衛星遙測資料、氣象因子和土地利用資料並運用人工智慧預測地面 PM2.5 對甲狀腺功能變化之相關研究</h5>
+				<p class="mycolor-sec">黃彬芳</p>
+				<hr>
+				<h5 class="mb-0">6. 結合空間異質性與環境因素的 A 型肝炎病毒時空動態和貝氏親緣地理學分析</h5>
+				<p class="mycolor-sec">劉信孚</p>
+			</div>
+
+			<div id="science3" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-science mb-0">[國科會計畫 3] 成果發表</h5>
+						<p class="mycolor-sec mb-0">主持人：盧道杰 教授</p>
+						<p class="text-muted mb-0">時間：6/30 (五) 08:30-10:00</p>
+						<p class="text-muted">地點：系館 2F 55250</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">1. 子計畫：地理公民科學與社區監測 (Ⅲ)</h5>
+				<p class="mycolor-sec">盧道杰</p>
+				<hr>
+				<h5 class="mb-0">2. 子計畫：地理資訊科技在道路生態學的應用-以臺灣動物路死觀察網為例 (Ⅲ)</h5>
+				<p class="mycolor-sec">張仕緯</p>
+				<hr>
+				<h5 class="mb-0">3. 子計畫：生物多樣性與地理公民科學平台 iNaturalist 在臺灣的應用 (Ⅱ)</h5>
+				<p class="mycolor-sec">林政道</p>
+				<hr>
+				<h5 class="mb-0">4. 社群感知於偵測土地使用時空變化</h5>
+				<p class="mycolor-sec">朱宏杰</p>
+				<hr>
+				<h5 class="mb-0">5. 都市通勤與住業均衡：應用 ETC 大數據分析臺灣超額通勤狀況 (Ⅰ)</h5>
+				<p class="mycolor-sec">吳秉昇</p>
+				<hr>
+				<h5 class="mb-0">6. 以無人機影像進行 LOD-2 三維建物自動模塑並建置 3D GIS 與建物價值估算應用平台</h5>
+				<p class="mycolor-sec">饒見有</p>
+			</div>
+
+			<div id="science4" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-science mb-0">[國科會計畫 4] 成果發表</h5>
+						<p class="mycolor-sec mb-0">主持人：郭巧玲 教授</p>
+						<p class="text-muted mb-0">時間：6/30 (五) 10:30-12:00</p>
+						<p class="text-muted">地點：系館 2F 55250</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">1. 時空災害知識圖譜建構研究 (1/2)</h5>
+				<p class="mycolor-sec">郭巧玲</p>
+				<hr>
+				<h5 class="mb-0">2. 空間資訊於十九世紀旅人與國際事件關聯的應用</h5>
+				<p class="mycolor-sec">林淑慧</p>
+				<hr>
+				<h5 class="mb-0">3. 基於深度學習方法於隱含式物件建物騎樓之判釋、使用情形評估及製圖</h5>
+				<p class="mycolor-sec">郭巧玲</p>
+				<hr>
+				<h5 class="mb-0">4. 新世代海洋資訊系統與國際合作資源進行全球性漁業分析與應用 (Ⅱ)—3D 動態即時視覺化與智慧地理資訊系統</h5>
+				<p class="mycolor-sec">許為元</p>
+				<hr>
+				<h5 class="mb-0">5. 開源自駕車系統軟體定位性能提升策略之研究—以 Autoware 為例</h5>
+				<p class="mycolor-sec">江凱偉</p>
+			</div>
+
+			<div id="science5" class="text-left py-3">
+				<div class="d-flex align-items-start">
+					<div>
+						<h5 class="text-science mb-0">[國科會計畫 5] 成果發表</h5>
+						<p class="mycolor-sec mb-0">主持人：呂學展 教授</p>
+						<p class="text-muted mb-0">時間：6/30 (五) 13:30-15:00</p>
+						<p class="text-muted">地點：系館 2F 55250</p>
+					</div>
+					<h5 class="ml-auto mr-1">
+						<a href="#top" onclick="scrollToTarget(event, 'top', 0)"><i class="fa-regular fa-calendar-days fa-lg mycolor-pri"></i></a>
+					</h5>
+				</div>
+				<h5 class="mb-0">1. 基於語義匹配與深度學習之軌跡預測與分析應用</h5>
+				<p class="mycolor-sec">呂學展</p>
+				<hr>
+				<h5 class="mb-0">2. 教室學生行為辨識準度之改良於異質邊緣運算之研究</h5>
+				<p class="mycolor-sec">林峰正</p>
+				<hr>
+				<h5 class="mb-0">3. 基於通用 RBF 層與生成對抗網路設計能協助既有時空大數據應用強健化與輕量化的框架</h5>
+				<p class="mycolor-sec">陳奕中</p>
+				<hr>
+				<h5 class="mb-0">4. 基於可信度傳遞的資料融合 SLAM 之研究與實現 (Ⅱ)</h5>
+				<p class="mycolor-sec">邱奕世</p>
+				<hr>
+				<h5 class="mb-0">5. 多尺度四維自我描述圖徵架構之設計、管理及智慧應用研究</h5>
+				<p class="mycolor-sec">洪榮宏</p>
+				<hr>
+				<h5 class="mb-0">6. 以週波未定值解算技術提升台灣線上精密單點定位服務（TOPS）定位精度之研究</h5>
+				<p class="mycolor-sec">楊名</p>
+			</div>
+		</section>
+
+		<footer class="pt-5 pb-1 mybgcolor-dark" id="footer"></footer>
+	</body>
+</html>

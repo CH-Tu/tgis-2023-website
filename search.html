@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+	<head>
+		<title>2023台灣地理資訊學會年會暨學術研討會</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+		<!-- Font: Noto Sans TC -->
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:500&display=swap&subset=chinese-traditional" rel="stylesheet">
+
+		<script src="search-data.js"></script>
+		<link rel="stylesheet" href="style.css">
+
+		<script>
+			function search()
+			{
+				name = document.getElementById("name").value;
+				if (name in id)
+					document.getElementById("response").innerHTML = unit[name] + '<br>' + name + ' ' + job[name] + ' ' + '您好！<br>您的報到編號為 <b style="color:var(--primary-color)">' + id[name] + '</b>';
+				else
+					document.getElementById("response").innerHTML = '您尚未報名本次會議，詳情請洽工作人員。'
+			}
+		</script>
+
+		<style>
+			.mybg { background-image: url("images/background-white.jpg"); } <!-- 圖片來源: http://material.ncku.edu.tw/picture.php?/2431/tags/791-%E6%B8%AC%E9%87%8F%E7%B3%BB -->
+		</style>
+	</head>
+
+	<body class="text-center">
+		<section class="d-flex justify-content-center align-items-center mybg">
+			<div class="shadow" style="background-color:rgba(255, 255, 255, 0.8);width:360px;">
+				<div class="m-5">
+					<h1>報到編號查詢</h1>
+					<form class="form-inline my-3">
+						<label class="mb-0" for="name">姓名：</label>
+						<input type="text" class="form-control" id="name" style="width:100px;">
+						<button type="button" class="btn mybtn ml-auto" onclick="search()">查詢</button>
+					</form>
+					<p class="text-left" id="response"></p>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

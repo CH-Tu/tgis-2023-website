@@ -1,0 +1,100 @@
+html, body
+{ 
+	height: 100%;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+.dropdown-menu a:active { background-color: var(--dark-color); }
+.text-shadow
+{
+	color: white;
+	text-shadow: 4px 4px 5px #000000;
+}
+.mybgcolor-dark { background-color: var(--dark-color); }
+.mybgcolor-light { background-color: var(--light-color); }
+.mybgcolor-pri-light { background-color: var(--primary-light-color); }
+.mybgcolor-sec-light { background-color: var(--secondary-light-color); }
+.mycolor-pri { color: var(--primary-color); }
+.mycolor-pri-light { color: var(--primary-light-color); }
+.mycolor-sec { color: var(--secondary-color); }
+.mycolor-sec-light { color: var(--secondary-light-color); }
+.mybg 
+{
+	height: 100%;
+	background-image: url("images/background.jpg"); /* 圖片來源: http://material.ncku.edu.tw/picture.php?/2431/tags/791-%E6%B8%AC%E9%87%8F%E7%B3%BB */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.myhr
+{
+	border: 0;
+	height: 1.5px;
+	width: 300px;
+	background-image: -webkit-linear-gradient(to right, rgba(0,0,0,0), var(--secondary-light-color), rgba(0,0,0,0));
+	background-image: -moz-linear-gradient(to right, rgba(0,0,0,0), var(--secondary-light-color), rgba(0,0,0,0));
+	background-image: -o-linear-gradient(to right, rgba(0,0,0,0), var(--secondary-light-color), rgba(0,0,0,0));
+	background-image: linear-gradient(to right, rgba(0,0,0,0), var(--secondary-light-color), rgba(0,0,0,0));
+}
+.mybtn
+{
+	background-color: white;
+	color: var(--primary-color);
+	border-style: solid;
+	border-color: var(--primary-color);
+}
+.mybtn:hover
+{
+	background-color: var(--primary-color);
+	color: white;
+}
+.mycontainer-s, .mycontainer-xs
+{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.text-forum { color: #CD0000; }
+.text-firm { color: Purple; }
+.text-normal { color: MediumBlue; }
+.text-student { color: #CD8000; }
+.text-science { color: Green; }
+
+@media (min-width: 576px)
+{
+	.mycontainer-s { max-width: 540px; }
+	.mycontainer-xs { max-width: 540px; }
+}
+@media (min-width: 768px)
+{
+	.mycontainer-s { max-width: 720px; }
+	.mycontainer-xs { max-width: 700px; }
+}
+@media (min-width: 992px)
+{
+	.mycontainer-s { max-width: 900px; }
+	.mycontainer-xs { max-width: 700px; }
+}
+@media (min-width: 1200px)
+{
+	.mycontainer-s { max-width: 900px; }
+	.mycontainer-xs { max-width: 700px; }
+}
+
+:root 
+{
+	--primary-color: #bc6c25;		  /* 主色：凸顯重點、按鈕 */
+	--primary-light-color: #dda15e;   /* 淺主色 */
+	--secondary-color: #606c38;		  /* 副色：標題 */
+	--secondary-light-color: #ccd5ae; /* 淺副色 */
+	--dark-color: #283618;			  /* 深色：背景 */
+	--light-color: #fefae0;			  /* 淺色：背景 */
+}
+
+@media (max-width: 576px) { .mybg { background-attachment: scroll; } }

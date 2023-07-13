@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+	<head>
+		<title>2023台灣地理資訊學會年會暨學術研討會</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+		<!-- Font: Noto Sans TC -->
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:500&display=swap&subset=chinese-traditional" rel="stylesheet">
+
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="style.css">
+
+		<script>
+			function loadNews()
+			{
+				let temp = window.location.href;
+				temp = temp.split("?")[1];
+				temp = temp.split("id=")[1];
+				let id = temp;
+
+				let file = "post/" + id + ".html";
+				let xhttp = new XMLHttpRequest();
+				xhttp.open("GET", file, false);
+				xhttp.send();
+					
+				document.getElementById("news").innerHTML += xhttp.responseText;
+			}
+
+			$(document).ready(function() {
+				loadNews();
+			});
+		</script>
+
+		<style>
+			body
+			{
+				display: flex;
+				flex-direction: column;
+			}
+
+			.mybg 
+			{
+				height: 30%;
+				flex-shrink: 0;
+			}
+		</style>
+	</head>
+  
+	<body class="text-center">
+		<nav class="navbar navbar-expand-sm navbar-dark mybgcolor-dark fixed-top" id="nav"></nav>
+
+		<section class="d-flex justify-content-center align-items-center mt-5 mybg">
+			<h1 class="display-4 text-shadow">公告</h1>
+		</section>
+
+		<section class="mycontainer-s my-5" id="news" style="flex-grow:1;"></section>
+
+		<footer class="pt-5 pb-1 mybgcolor-dark" id="footer"></footer>
+	</body>
+</html>

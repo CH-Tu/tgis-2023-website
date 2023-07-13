@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+	<head>
+		<title>2023台灣地理資訊學會年會暨學術研討會</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+		<!-- Font: Noto Sans TC -->
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:500&display=swap&subset=chinese-traditional" rel="stylesheet">
+		<!-- Font: Oswald -->
+		<link href="https://fonts.googleapis.com/css?family=Oswald:500&display=swap" rel="stylesheet">
+
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="style.css">
+
+		<script>
+			function loadNews()
+			{
+				var num_news = 9;
+				for (let i = num_news; i >= Math.max(num_news-2, 1); i--)
+				{
+					let file = "info/" + i + ".html";
+					let xhttp = new XMLHttpRequest();
+					xhttp.open("GET", file, false);
+					xhttp.send();
+					
+					document.getElementById("news").innerHTML += xhttp.responseText;
+					if (i > Math.max(num_news-2, 1))
+						document.getElementById("news").innerHTML += "<hr>";
+				}
+			}
+
+			$(document).ready(function() {
+				loadNews();
+			});
+		</script>
+	</head>
+
+	<body class="text-center">
+		<nav class="navbar navbar-expand-sm navbar-dark mybgcolor-dark fixed-top " id="nav"></nav>
+
+		<section class="d-flex justify-content-center align-items-center mybg">
+			<div class="container text-shadow">
+				<h1 class="display-1" style="font-family:'Oswald';">TGIS 2023</h1>
+				<h1>2023 台灣地理資訊學會年會暨學術研討會</h1>
+				<p>
+					6 月 29 日、30 日，國立成功大學<br>
+					June 29<sup>th</sup> - 30<sup>th</sup>, National Cheng Kung University
+				</p>
+			</div>	
+		</section>
+
+		<section class="py-5">
+			<div class="mycontainer-s carousel slide shadow px-0 mb-5" data-ride="carousel" id="focus">
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+					<li data-target="#focus" data-slide-to="0" class="active"></li>
+					<li data-target="#focus" data-slide-to="1"></li>
+					<li data-target="#focus" data-slide-to="2"></li>
+					<li data-target="#focus" data-slide-to="3"></li>
+					<li data-target="#focus" data-slide-to="4"></li>
+				</ul>
+				<!-- The slideshow -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<a href="https://drive.google.com/drive/folders/1iKH1byA2IJuL_7LYz1fFoBYjN0ue3vM8?usp=sharing" target="_blank">
+							<img class="img-fluid" src="images/carousel/photo.jpg" alt="photo">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="images/carousel/lottery.png">
+							<img class="img-fluid" src="images/carousel/lottery.png" alt="lottery">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="agenda.html">
+							<img class="img-fluid" src="images/carousel/agenda.jpg" alt="agenda">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="register.html">
+							<img class="img-fluid" src="images/carousel/register.jpg" alt="register">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="intro.html">
+							<img class="img-fluid" src="images/carousel/poster.jpg" alt="poster">
+						</a>
+					</div>
+				</div>
+				<!-- Left and right controls -->
+				<a class="carousel-control-prev" href="#focus" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#focus" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+
+			<div class="mycontainer-xs" id="news">
+				<h1 class="mycolor-sec">最新消息</h1>
+				<hr class="myhr">
+			</div>
+		</section>
+
+		<section class="py-5 mybgcolor-light">
+			<div class="mycontainer-xs">
+				<h1 class="mycolor-sec">重要時程</h1>
+				<hr class="myhr">
+				<div class="d-flex justify-content-center align-items-center">
+					<div>
+						<h3>論文徵稿</h3>
+						<img src="icons/index/research.png" alt="research" width="60">
+					</div>
+					<div>
+						<ul class="mb-0 text-left">
+							<li>摘要截稿：<b class="mycolor-pri">5 月 1 日 (一)</b></li>
+							<li>審查通知：<b class="mycolor-pri">5 月 8 日 (一)</b></li>
+							<li>全文繳交：<b class="mycolor-pri">5 月 22 日 (一)</b></li>
+						</ul>
+						<button class="btn mybtn mt-2" type="button" data-toggle="popover" data-placement="bottom" data-content="聯絡人：呂老師<br>電話：(06) 275-7575 ext. 63830<br>（呂老師實驗室：ext. 63833 ext. 863）<br>e-mail：tgis2023@gmail.com">
+							聯絡資訊
+						</button>
+					</div>
+				</div>
+				<hr>
+				<div class="d-flex justify-content-center align-items-center">
+					<div>
+						<ul class="mb-0 text-left">
+							<li>線上報名及早鳥優惠截止：<br><b class="mycolor-pri">6 月 20 日 (二)</b></li>
+						</ul>
+						<button class="btn mybtn mt-2" type="button" data-toggle="popover" data-placement="bottom" data-content="聯絡人：呂老師<br>電話：(06) 275-7575 ext. 63830<br>（呂老師實驗室：ext. 63833 ext. 863）<br>e-mail：tgis2023@gmail.com">
+							聯絡資訊
+						</button>
+					</div>
+					<div class="ml-3">
+						<h3>會議報名</h3>
+						<img src="icons/index/conference.png" alt="conference" width="60">
+					</div>
+				</div>
+				<hr>
+				<div class="d-flex justify-content-center align-items-center">
+					<div>
+						<h3>金圖獎</h3>
+						<img src="icons/index/trophy.png" alt="intelligence" width="60">
+					</div>
+					<div>
+						<ul class="mb-0 text-left">
+							<li>報名截止：<b class="mycolor-pri">4 月 30 日 (日)</b></li>
+							<li>得獎公布：<b class="mycolor-pri">6 月 12 日 (一)</b></li>
+							<li>頒獎時間：<b class="mycolor-pri">6 月 29 日 (四)</b></li>
+						</ul>
+						<button class="btn mybtn mt-2" type="button" data-toggle="popover" data-placement="bottom" data-content="聯絡人：曾小姐<br>電話：(02) 2364-9873<br>e-mail：contacttgis@gmail.com">
+							聯絡資訊
+						</button>
+					</div>
+				</div>
+				<hr>
+				<div class="d-flex justify-content-center align-items-center">
+					<div>
+						<ul class="mb-0 text-left">
+							<li>報名截止：<b class="mycolor-pri">5 月 19 日 (五)</b></li>
+							<li>繳費截止：<b class="mycolor-pri">5 月 22 日 (一)</b></li>
+						</ul>
+						<button class="btn mybtn mt-2" type="button" data-toggle="popover" data-placement="bottom" data-content="聯絡人：許先生<br>電話：(06) 275-7575 ext. 63833 ext. 865<br>e-mail：tgis2023@gmail.com">
+							聯絡資訊
+						</button>
+					</div>
+					<div class="ml-3">
+						<h3>單位參展</h3>
+						<img src="icons/index/control.png" alt="manufacturing" width="60">
+					</div>
+				</div>
+				<hr>
+				<div class="d-flex justify-content-center align-items-center">
+					<div>
+						<h3>經費贊助</h3>
+						<img src="icons/index/growth.png" alt="growth" width="60">
+					</div>
+					<div>
+						<ul class="mb-0 text-left">
+							<li>贊助截止：<b class="mycolor-pri">6 月 2 日 (五)</b></li>
+						</ul>
+						<button class="btn mybtn mt-2" type="button" data-toggle="popover" data-placement="bottom" data-content="聯絡人：許先生<br>電話：(06) 275-7575 ext. 63833 ext. 865<br>e-mail：tgis2023@gmail.com">
+							聯絡資訊
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="pt-5 pb-1 mybgcolor-dark" id="footer"></footer>
+	</body>
+</html>
+
+<!--
+程式撰寫：測量108 凃嘉濠
+-->
