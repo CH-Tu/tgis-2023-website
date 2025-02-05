@@ -46,6 +46,6 @@ $(document).ready(function() {
 	loadFooter();
 
 	$('[data-toggle="popover"]')
-		.popover({html: true})							// 啟用 popover（內文啟用 html）
-		.click(function(event) { event.preventDefault(); });	// 取消事件的默認動作（防止點擊後跑回頁面上方）
+		.popover({html: true}) // 啟用 popover（內文啟用 html）
+		.click(function(event) { event.preventDefault(); }); // 取消事件的默認動作（防止點擊後跑回頁面上方）
 });
