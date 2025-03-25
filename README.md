@@ -1,6 +1,5 @@
 # TGIS 2023 Official Website
-Source code of TGIS 2023 official website.  
-[TGIS 2023](https://tgis2023.geomatics.ncku.edu.tw/)
+Source code of [TGIS 2023](https://tgis2023.geomatics.ncku.edu.tw/) official website.
 
 ## References
 [Bootstrap](https://getbootstrap.com/): Web development toolkit.  
