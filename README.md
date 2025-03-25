@@ -2,9 +2,7 @@
 Source code of TGIS 2023 official website.  
 [TGIS 2023](https://tgis2023.geomatics.ncku.edu.tw/)
 
-
 ## References
-
 [Bootstrap](https://getbootstrap.com/): Web development toolkit.  
 [Google Fonts](https://fonts.google.com/): Open-source fonts.  
 [Flat Icon](https://www.flaticon.com/): Free icons.  
